@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #A3D9FF;
+    font-family: sans-serif;
+}
+
+#worldMap{
+    width:100%;
+    height:100vh;
+    transition: 1s;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#slide{
+    width:100%;
+    height:100vh;
+    transition: transform .2s;
+}
+
+#kzSvgDetails {
+    visibility: hidden;
+}
+
+@media screen and (orientation:landscape) {
+    .zoom {
+        transform: scale(5) translateY(10%) translateX(5%);
+    }
+
+    .zoomAtyrau {
+        transform: scale(17) translateY(8%) translateX(10%);
+    }
+
+    .zoomMangystau {
+        transform: scale(17) translateY(6%) translateX(10%);
+    }
+
+    .zoomAlmaty {
+        transform: scale(17) translateY(6%) translateX(3%);
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .zoom {
+        transform: scale(5) translateY(4%) translateX(10%);
+    }
+
+    .zoomAtyrau {
+        transform: scale(17) translateY(4%) translateX(17%);
+    }
+
+    .zoomMangystau {
+        transform: scale(17) translateY(2%) translateX(17%);
+    }
+
+    .zoomAlmaty {
+        transform: scale(17) translateY(2%) translateX(4%);
+    }
+}

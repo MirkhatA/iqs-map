@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="91204d42-d807-43fd-9cc1-08a231402745" name="Xampp" url="http://localhost/phpMap">
+        <fileTransfer mountedRoot="C:\Mirkhat\project\phpMap" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
