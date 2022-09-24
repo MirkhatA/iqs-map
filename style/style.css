@@ -30,6 +30,10 @@ body {
     visibility: hidden;
 }
 
+#emptyKzSvgPath {
+    fill: black;
+}
+
 @media screen and (orientation:landscape) {
     .zoom {
         transform: scale(5) translateY(10%) translateX(5%);
@@ -45,6 +49,26 @@ body {
 
     .zoomAlmaty {
         transform: scale(17) translateY(6%) translateX(3%);
+    }
+
+    .zoomAktobe {
+        transform: scale(17) translateY(9%) translateX(8%);
+    }
+
+    .zoomKyzylorda {
+        transform: scale(17) translateY(6%) translateX(6.5%);
+    }
+
+    .zoomTurkystan {
+        transform: scale(17) translateY(7%) translateX(6.5%);
+    }
+
+    .zoomAqmola {
+        transform: scale(17) translateY(12%) translateX(5%);
+    }
+
+    .zoomPavlodar {
+        transform: scale(17) translateY(12%) translateX(3%);
     }
 }
 
@@ -63,5 +87,25 @@ body {
 
     .zoomAlmaty {
         transform: scale(17) translateY(3%) translateX(4%);
+    }
+
+    .zoomAktobe {
+        transform: scale(17) translateY(5.3%) translateX(13.3%);
+    }
+
+    .zoomKyzylorda {
+        transform: scale(17) translateY(3.5%) translateX(11.3%);
+    }
+
+    .zoomTurkystan {
+        transform: scale(17) translateY(3%) translateX(9%);
+    }
+
+    .zoomAqmola {
+        transform: scale(17) translateY(7%) translateX(8%);
+    }
+
+    .zoomPavlodar {
+        transform: scale(17) translateY(7%) translateX(5%);
     }
 }
