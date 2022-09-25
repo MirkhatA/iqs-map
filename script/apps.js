@@ -58,8 +58,8 @@
     // clear transform values
     var clearTransform = (function () {
         $('#slide').css({
-                'transform':'scale(1,1) translate(0px, 0px)'
-            });
+            'transform':'scale(1,1) translate(0px, 0px)'
+        });
     });
 
     var fillBackground = (function () {
@@ -71,8 +71,12 @@
     });
 
     var closeInfoBlock = (function () {
-        console.log(screen.width);
-        $('#infoPage').css('left', '-'+screen.width+'px');
+        $('#infoPage').css('left', '-'+screen.width);
+    });
+
+
+    var showCards = (function () {
+        $('#almaty-cards').css('visibility', 'visible');
     });
 
     init();
