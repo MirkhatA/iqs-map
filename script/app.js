@@ -71,7 +71,8 @@
     });
 
     var closeInfoBlock = (function () {
-        $('#infoPage').css('left', '-'+screen.width);
+        console.log(1);
+        $('#infoPage').css('left', '-'+screen.width+'px');
     });
 
 
