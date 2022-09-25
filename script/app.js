@@ -75,6 +75,11 @@
         $('#infoPage').css('left', '-'+screen.width);
     });
 
+
+    var showCards = (function () {
+        $('#almaty-cards').css('visibility', 'visible');
+    });
+
     init();
 });
 

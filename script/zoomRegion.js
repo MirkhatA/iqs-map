@@ -59,7 +59,3 @@ var disableOtherRegions = (function (activeRegion) {
     otherIcons.css('visibility', 'visible');
 });
 
-
-var showCards = (function () {
-    $('#almaty-cards').css('visibility', 'visible');
-});
