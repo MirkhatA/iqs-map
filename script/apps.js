@@ -72,7 +72,7 @@
 
     var closeInfoBlock = (function () {
         console.log(screen.width);
-        $('#infoPage').css('left', '-'+screen.width);
+        $('#infoPage').css('left', '-'+screen.width+'px');
     });
 
     init();

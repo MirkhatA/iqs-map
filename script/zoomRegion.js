@@ -49,7 +49,6 @@ var zoomToPavlodar = (function () {
 })
 
 
-
 // disable visibility of other regions
 var disableOtherRegions = (function (activeRegion) {
     var otherIcons = $(activeRegion).children('.smallIcon');
@@ -58,4 +57,9 @@ var disableOtherRegions = (function (activeRegion) {
     $('.icon').css('visibility', 'hidden');
     otherRegions.css('visibility', 'hidden');
     otherIcons.css('visibility', 'visible');
+});
+
+
+var showCards = (function () {
+    $('#almaty-cards').css('visibility', 'visible');
 });
