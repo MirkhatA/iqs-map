@@ -14,14 +14,23 @@
         $('#aqmola').click(zoomToAqmola);
         $('#pavlodar').click(zoomToPavlodar);
         fillBackground();
+        $('.cancelLogo').click(closeInfoBlock);
 
 
-        $('#almatyIcon').click(showCards);
-        $('#cancelIcon').click(closeInfoBlock);
 
-        $('#cardOne').click(showInfoBlock);
-        $('#cardTwo').click(showInfoBlock);
-        $('#cardThree').click(showInfoBlock);
+
+        $('#iqsOne').click(openIqsOneCard);
+        $('#iqseSecond').click(openIqsSecondCard);
+        $('#iqsDIsl').click(openIqsSecondCard);
+        $('#almatyIcon').click(openAlmatyCard);
+        $('#astanaIcon').click(openAstanaCard);
+        $('#kyzylordaIcon').click(openKyzylordaCard);
+        $('#shymkentIcon').click(openShymkentCard);
+        $('#iqseOneFour').click(openIqseOneFourCard);
+        $('#iqseSix').click(openIqseSixCard);
+        $('#aktobeSmallIcon').click(openAktobeCard);
+        $('#pavlodarSmallIcon').click(openPavlodarCard);
+        $('#iqseFive').click(openIqseFiveCard);
     }
 
     // show kz details
@@ -60,6 +69,8 @@
         $('#slide').css({
             'transform':'scale(1,1) translate(0px, 0px)'
         });
+        $('.cards').css('visibility', 'hidden');
+
     });
 
     var fillBackground = (function () {
@@ -71,17 +82,18 @@
     });
 
     var closeInfoBlock = (function () {
-        console.log(1);
-        $('#infoPage').css('left', '-'+screen.width+'px');
+        console.log('close')
+        var screenWidth = screen.width + 300;
+        $('.info-page').css('left', '-' + screenWidth + 'px');
     });
 
+    // slide
 
-    var showCards = (function () {
-        $('#almaty-cards').css('visibility', 'visible');
-    });
 
     init();
 });
+
+
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);

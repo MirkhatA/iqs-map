@@ -76,30 +76,22 @@ body {
         transform: scale(17) translateY(12%) translateX(3%);
     }
 
-    .info-page__header {
-        width: 100%;
-        height: 10vh;
-    }
-
     .info-page {
-        flex-wrap: wrap;
-        position: absolute;
-        display: flex;
+        flex-direction: row;
     }
 
     .info-page__slider {
-        width: 50%;
-        height: 80vh;
+        display: none;
     }
 
     /* info card */
     .top-slide {
-        display: none;
+        width: 50%;
+        height: 50vh;
     }
 
     .info-page__info {
         width: 50%;
-        height: 80vh;
     }
 
 }
@@ -364,10 +356,6 @@ body, html {
     width: 100%;
 }
 
-.cancelLogo {
-    z-index: 100;
-}
-
 .info-page__header {
     display: flex;
     justify-content: space-between;
@@ -398,12 +386,13 @@ body, html {
 }
 
 .info-page__info img {
-    width: 100%;
-    height: 55vh;
+
+    height: 35vh;
 }
 
 .info-page__slider {
     height: 30vh;
+    border: 1px solid green;
 }
 
 .info-page__slider .logo {
